@@ -13,3 +13,6 @@ Breast-conserving surgery (BCS) aims to remove tumor tissue and preserve normal 
 
 # WORK IN PROGRESS:
 -Transfer Learning approach with H&E images applied onto DUV WSI
+-Use GradCam to get the weight map from the DUV WSI
+-Visualize the activation map
+-Test with DUV WSI patch images
