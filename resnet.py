@@ -5,19 +5,13 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img, save_im
 import time
 import os
 import numpy as np
-#import torch
-
-
 
 class ResNetClass:
     
     '''Class for storing base ResNet model and weights'''
     def __init__(self):
         self.base_model = ResNet50(weights='imagenet')
-        #self.base_model=resnet18_StoDepth_lineardecay(pretrained=True, prob_0_L=[1,0.5], multFlag=True) 
-
         self.layer_models = dict()
-    
     
     def get_resnet_model(self, layer_name='avg_pool'):
         '''Returns resnet model with desired last layer.'''
@@ -29,8 +23,7 @@ class ResNetClass:
             print('Model ({}) not found. Adding model to model dictionary.'.format(layer_name))
             self.layer_models[layer_name] = Model(inputs=self.base_model.input, outputs=self.base_model.get_layer(layer_name).output)
             return self.layer_models[layer_name]
-        
-        
+             
     def save_resnet_predictions(self, df, save_folder, model, verbose=0,mode=0):
         '''Saves resnet predictions for each image as .npy'''
         i = 0
