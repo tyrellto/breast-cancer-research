@@ -54,22 +54,23 @@ The method employed in this research involves a multi-step process tailored to h
 5. **Decision Fusion**: Finally, we aggregate the patch-level predictions and their associated regional importance maps to assign a comprehensive classification label to each WSI. This fusion approach ensures that our model's predictions are not only accurate but also interpretable and clinically relevant. This part only contains one hyperparameter, which is the ratio of the cancer region's size to the foreground's. Part of [model_approach.ipynb](https://github.com/tyrellto/breast-cancer-research/blob/main/model_approach.ipynb), where it combines the features and images used in the **Patch Extraction**, **Preprocessing and Augmentation**, **Feature Map Generation**, and **Explainability with Grad-CAM++**.
 
 ## Quantitative Results
-Here are some figures to show the metrics of the approach. For a limited and imbalanced dataset, it has done quite well.
+Here are some figures to show the metrics of the approach. (1) in the table is a barebone ResNet50 approach, while (2) is my proposed method:
 
 <p align="center">
   <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/207d77a5-6c2f-4b53-9c3a-26b7f1dfb63b" width="800" alt="Accuracy Results Diagram"/>
 </p>
 
+This is a confusion matrix to show which cases for cancer and benign/normal were correctly classified and misclassified.
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/82ab0955-f901-4987-ae88-3f7f7feb7236" width="400" alt="Accuracy Results Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/82ab0955-f901-4987-ae88-3f7f7feb7236" width="400" alt="Matrix Results Diagram"/>
 </p>
 
 ## Qualitative Results
 Here is a diagram showing some visual examples with the corresponding H&E and DUV images with overlays:
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/37b81291-8639-416c-a89b-7787c03355f0" width="800" alt=" Results Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/37b81291-8639-416c-a89b-7787c03355f0" width="800" alt="Image Results Diagram"/>
 </p>
 
 ## Conclusion
