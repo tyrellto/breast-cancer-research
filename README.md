@@ -46,15 +46,15 @@ The method employed in this research involves a multi-step process tailored to h
   <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/0e63d83f-b9d2-455f-b798-38ae4ce65a82" width="800" alt="Process Diagram"/>
 </p>
 
-1. **Patch Extraction**: We start by dividing each DUV whole-slide image (WSI) into a series of non-overlapping patches. Each patch is analyzed for its content, ensuring a significant presence of tissue by checking the foreground pixel intensity.
+1. **Patch Extraction**: We start by dividing each DUV whole-slide image (WSI) into a series of non-overlapping patches. Each patch is analyzed for its content, ensuring a significant presence of tissue by checking the foreground pixel intensity. Can be replicated in [foreground_and_patch_extraction.ipynb](https://github.com/tyrellto/breast-cancer-research/blob/main/foreground_and_patch_extraction.ipynb)
 
-2. **Preprocessing and Augmentation**: To address variances in dimensions across DUV WSIs, we resize images to standardized dimensions, allowing for consistent patch extraction. Augmentation techniques like flips and rotations increase the dataset, enhancing the model's ability to generalize.
+2. **Preprocessing and Augmentation**: To address variances in dimensions across DUV WSIs, we resize images to standardized dimensions, allowing for consistent patch extraction. Part of [foreground_and_patch_extraction.ipynb](https://github.com/tyrellto/breast-cancer-research/blob/main/foreground_and_patch_extraction.ipynb)
 
-3. **Feature Map Generation**: Using a pre-trained ResNet50, we extract feature maps for each patch. These feature maps serve as inputs to an XGBoost classifier that predicts binary outcomes for each patch, identifying regions of interest (ROIs) within the DUV WSIs.
+3. **Feature Map Generation**: Using a pre-trained ResNet50, we extract feature maps for each patch. These feature maps serve as inputs to an XGBoost classifier that predicts binary outcomes for each patch, identifying regions of interest (ROIs) within the DUV WSIs. Part of [feature_extraction.ipynb](https://github.com/tyrellto/breast-cancer-research/blob/main/feature_extraction.ipynb)
 
-4. **Explainability with Grad-CAM++**: Grad-CAM++ on a pre-trained DenseNet169 model calculates the regional importance map for the DUV WSI with the hypothesis that salient features will be captured
+4. **Explainability with Grad-CAM++**: Grad-CAM++ on a pre-trained DenseNet169 model calculates the regional importance map for the DUV WSI with the hypothesis that salient features will be captured. Part of [model_approach.ipynb](https://github.com/tyrellto/breast-cancer-research/blob/main/model_approach.ipynb), where it combines the features and images used in the **Patch Extraction**, **Preprocessing and Augmentation**, and **Feature Map Generation**
 
-5. **Decision Fusion**: Finally, we aggregate the patch-level predictions and their associated regional importance maps to assign a comprehensive classification label to each WSI. This fusion approach ensures that our model's predictions are not only accurate but also interpretable and clinically relevant. This part only contains one hyperparameter, which is the ratio of the cancer region's size to the foreground's.
+5. **Decision Fusion**: Finally, we aggregate the patch-level predictions and their associated regional importance maps to assign a comprehensive classification label to each WSI. This fusion approach ensures that our model's predictions are not only accurate but also interpretable and clinically relevant. This part only contains one hyperparameter, which is the ratio of the cancer region's size to the foreground's. Part of [model_approach.ipynb](https://github.com/tyrellto/breast-cancer-research/blob/main/model_approach.ipynb), where it combines the features and images used in the **Patch Extraction**, **Preprocessing and Augmentation**, **Feature Map Generation**, and **Explainability with Grad-CAM++**.
 
 ## Quantitative Results
 Here are some figures to show the metrics of the approach. For a limited and imbalanced dataset, it has done quite well.
