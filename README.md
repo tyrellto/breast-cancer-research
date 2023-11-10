@@ -1,4 +1,4 @@
-# Project-Giannis---Senior-Design
+# Breast Cancer Research w/ ML/AI Applications
 ---
 **Table of Contents**
 - [Availability of Dataset](#availability-of-dataset)
@@ -8,7 +8,8 @@
 - [Quantitative Results](#quantitative-results)
 - [Qualitative Results](#Qualitative-results)
 - [Conclusion](#conclusion)
-- 
+
+  
 <h2>Publications</h2>
 <ul>
     <li>
