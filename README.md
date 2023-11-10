@@ -36,6 +36,10 @@ The dataset comprises DUV images from 60 samples, split between 24 normal/benign
 These images are not available to the public, since it is a private dataset shared with me by the Medical College of Wisconsin's tissue bank. If you are interested in attaining the DUV images that were used in this research, contact Dr. Bing Yu for permission to use the images. 
 [Dr. Bing Yu's Profile](https://mcw.marquette.edu/biomedical-engineering/directory/bing-yu.php)
 
+<p align="center">
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/fc679867-3261-487e-a0e7-36080db86bed" width="800" alt="Process Diagram"/>
+</p>
+
 ## Method
 The method employed in this research involves a multi-step process tailored to handle the intricacies of DUV images for breast cancer detection:
 
