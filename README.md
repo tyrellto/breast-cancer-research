@@ -61,11 +61,11 @@ Here are some figures to show the metrics of the approach. For a limited and imb
 </p>
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/82ab0955-f901-4987-ae88-3f7f7feb7236" width="600" alt="Accuracy Results Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/82ab0955-f901-4987-ae88-3f7f7feb7236" width="400" alt="Accuracy Results Diagram"/>
 </p>
 
 ## Qualitative Results
-Here is a diagram showing some examples:
+Here is a diagram showing some visual examples with the corresponding H&E and DUV images with overlays:
 
 <p align="center">
   <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/37b81291-8639-416c-a89b-7787c03355f0" width="600" alt=" Results Diagram"/>
