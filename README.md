@@ -1,4 +1,4 @@
-# Availability of DUV images
+# Availability of dataset
 Deep UltraViolet Breast Cancer images are not available to the public, since it is a private dataset shared to me with the Medical College of Wisconsin's tissue bank. 
 If you are interested in attaining the DUV images that was used in this research, contact Dr. Bing Yu for permission to use the images. 
 https://mcw.marquette.edu/biomedical-engineering/directory/bing-yu.php
