@@ -40,7 +40,7 @@ The dataset comprises DUV images from 60 samples, split between 24 normal/benign
 The method employed in this research involves a multi-step process tailored to handle the intricacies of DUV images for breast cancer detection:
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/0e63d83f-b9d2-455f-b798-38ae4ce65a82" width="600" alt="Process Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/0e63d83f-b9d2-455f-b798-38ae4ce65a82" width="800" alt="Process Diagram"/>
 </p>
 
 1. **Patch Extraction**: We start by dividing each DUV whole-slide image (WSI) into a series of non-overlapping patches. Each patch is analyzed for its content, ensuring a significant presence of tissue by checking the foreground pixel intensity.
@@ -68,7 +68,7 @@ Here are some figures to show the metrics of the approach. For a limited and imb
 Here is a diagram showing some visual examples with the corresponding H&E and DUV images with overlays:
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/37b81291-8639-416c-a89b-7787c03355f0" width="600" alt=" Results Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/37b81291-8639-416c-a89b-7787c03355f0" width="800" alt=" Results Diagram"/>
 </p>
 
 ## Conclusion
