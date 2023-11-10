@@ -1,4 +1,4 @@
-# Breast Cancer Research w/ ML/AI Applications
+# Breast Cancer Research with ML/AI Applications
 ---
 **Table of Contents**
 - [Availability of Dataset](#availability-of-dataset)
