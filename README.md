@@ -1,7 +1,6 @@
 # Breast Cancer Research with ML/AI Applications
 ---
 **Table of Contents**
-- [Availability of Dataset](#availability-of-dataset)
 - [Abstract](#abstract)
 - [Dataset](#dataset)
 - [Method](#method)
@@ -28,16 +27,14 @@
     </li>
 </ul>
 
-
-## Availability of Dataset
-Deep UltraViolet Breast Cancer images are not available to the public, since it is a private dataset shared with me by the Medical College of Wisconsin's tissue bank. If you are interested in attaining the DUV images that were used in this research, contact Dr. Bing Yu for permission to use the images. 
-[Dr. Bing Yu's Profile](https://mcw.marquette.edu/biomedical-engineering/directory/bing-yu.php)
-
 ## Abstract
 The purpose of this research is to aid medical professionals with diagnosing cancer in breast tissue. It utilizes Deep Ultraviolet (DUV) fluorescence images of breast cancer tissue for the deep learning approach. This readme will briefly talk about the research by first introducing possible solutions to current problems with breast-conserving surgery (BCS) and Hematoxylin and eosin stain (H&E) images. In the attached poster, the methodology of the deep learning approach will be briefly described with a patch-based transfer learning approach. Afterwards, experimental results will be shown with a quantitative evaluation of the method, and qualitative evaluation of the DUV images for intra-operative breast cancer margin assessment.
 
 ## Dataset
 The dataset comprises DUV images from 60 samples, split between 24 normal/benign and 36 malignant. These images are obtained using a custom DUV-FSM system with 285 nm ultraviolet excitation. Staining with propidium iodide and eosin Y enhances the fluorescence contrast, producing high-resolution images. The dataset, divided into 34468 patches, provides a detailed representation of the tissue characteristics necessary for training our deep learning models.
+
+These images are not available to the public, since it is a private dataset shared with me by the Medical College of Wisconsin's tissue bank. If you are interested in attaining the DUV images that were used in this research, contact Dr. Bing Yu for permission to use the images. 
+[Dr. Bing Yu's Profile](https://mcw.marquette.edu/biomedical-engineering/directory/bing-yu.php)
 
 ## Method
 The method employed in this research involves a multi-step process tailored to handle the intricacies of DUV images for breast cancer detection:
