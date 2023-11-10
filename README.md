@@ -57,8 +57,9 @@ The method employed in this research involves a multi-step process tailored to h
 Here are some figures to show the metrics of the approach. For a limited and imbalanced dataset, it has done quite well.
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/207d77a5-6c2f-4b53-9c3a-26b7f1dfb63b" width="600" alt="Accuracy Results Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/207d77a5-6c2f-4b53-9c3a-26b7f1dfb63b" width="800" alt="Accuracy Results Diagram"/>
 </p>
+
 
 <p align="center">
   <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/82ab0955-f901-4987-ae88-3f7f7feb7236" width="400" alt="Accuracy Results Diagram"/>
