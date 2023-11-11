@@ -37,7 +37,7 @@ These images are not available to the public, since it is a private dataset shar
 [Dr. Bing Yu's Profile](https://mcw.marquette.edu/biomedical-engineering/directory/bing-yu.php)
 
 <p align="center">
-  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/fc679867-3261-487e-a0e7-36080db86bed" width="800" alt="Process Diagram"/>
+  <img src="https://github.com/tyrellto/breast-cancer-research/assets/61175343/fc679867-3261-487e-a0e7-36080db86bed" width="800" alt="Cancer Example"/>
 </p>
 
 ## Method
